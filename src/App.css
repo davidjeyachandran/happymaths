@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a, button {
+  cursor:pointer;
+}
+
+/* Custom CSS for Happy Maths */
+body {
+  font-family: georgia;
+}
+.container {
+  text-align: center;
+}
+.statusbox {
+  border: 1px #ddd solid;
+}
+#status {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 5em;
+  color: red;
+  margin: 2px 0 15px 0;
+}
+.number, #answer {
+  font-size: 5em;
+}
+#counter {
+  color: #777;
+  font-size: 1.3em;
+}
+#clock {
+  color: #555;
+  font-size: 1.3em;
+}
+#answer {width: 100px}
+
+#btn {
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  margin: 5px 0;
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px;
+  background: #42d934;
+  text-decoration: none;
+  border: 0px;
+  width: 50%;
+}
+
+button:hover {
+  background: #30e722;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+  button {
+    width: 100%;
+  }
+}
