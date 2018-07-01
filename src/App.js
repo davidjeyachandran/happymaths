@@ -81,7 +81,7 @@ class Steps extends Component {
   }
 
   render() {
-    const startTime = 10
+    const startTime = 90
 
     switch (this.state.step) {
       case 0:
