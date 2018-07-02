@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 const CountDown = ({time, startTime}) => {
-  let length = Math.round((time/startTime) * 60)
+  let length = Math.round((time/startTime) * 120)
   console.log(length)
   let chars = ''
   for (let i=0; i<length; i++){
-    chars += '>'
+    chars += '.'
   }
   return chars;
 }
@@ -47,7 +47,7 @@ export default class Game extends Component {
 
   createRandomProblem(type) {
     const max = 10
-    let random1 = Math.floor(Math.random() * 10)+5;
+    let random1 = Math.floor(Math.random() * 5)+5;
     let random2 = Math.floor(Math.random() * max)+1;
     var problem = '';
 

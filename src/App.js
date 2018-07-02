@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GameReady from './GameReady'
 import Game from './Game'
 import './App.css';
 
@@ -17,7 +18,7 @@ class ChooseType extends Component {
   render() {
     return(
       <div id="setup">
-        <button onClick={this.clickHandler.bind(this,'ADDITION')}>Addition<div id="small">Choose level...</div></button>
+        <button onClick={this.clickHandler.bind(this,'ADDITION')}>Addition</button>
         <button onClick={this.clickHandler.bind(this,'SUBTRACTION')}>Subtraction</button>
         <button onClick={this.clickHandler.bind(this,'MULTIPLICATION')}>Multiplication</button>
         <button onClick={this.clickHandler.bind(this,'DIVISION')}>Division</button>
@@ -26,16 +27,6 @@ class ChooseType extends Component {
   }
 }
 
-const GameReady = ({gameType, startTime, newGameFunction}) => {
-  return (
-    <div>
-      <h3>{gameType}</h3>
-      <p>{startTime} seconds.</p>
-      <p>Are you ready?</p>
-      <button id="btn" onClick={newGameFunction.bind(this,2)}>Go</button>
-    </div>
-    )
-}
 
 const Congratulations = ({score, newGameFunction}) => {
   return (
@@ -49,13 +40,15 @@ const Congratulations = ({score, newGameFunction}) => {
   )
 }
 
+
 class Steps extends Component {
   constructor(props) {
     super(props)
     this.state = {
       step: 0,
       gameType: '',
-      score: 0
+      score: 0,
+      numberList: [1,2,3,4,5,6,7,8,9]
     }
     this.endGameHandler = this.endGameHandler.bind(this)
     this.chooseTypeFunction = this.chooseTypeFunction.bind(this)
@@ -91,14 +84,16 @@ class Steps extends Component {
         return <GameReady
                   gameType={this.state.gameType}
                   startTime={startTime}
+                  numberList={this.state.numberList}
                   newGameFunction={this.newGame} />
 
       case 2:
-        return <Game 
-                  gameType={this.state.gameType} 
+        return <Game
+                  gameType={this.state.gameType}
                   startTime={startTime}
-                  endGameHandler={this.endGameHandler} 
-                  score={this.state.score} 
+                  endGameHandler={this.endGameHandler}
+                  score={this.state.score}
+                  numberList={this.state.numberList}
                   updateScoreFunction={this.updateScore} />
 
       case 3:
@@ -110,6 +105,7 @@ class Steps extends Component {
 
   }
 }
+
 
 class App extends Component {
   render() {
