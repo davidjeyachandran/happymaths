@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.adad486c.css",
-  "main.css.map": "static/css/main.adad486c.css.map",
-  "main.js": "static/js/main.f31039b8.js",
-  "main.js.map": "static/js/main.f31039b8.js.map"
+  "files": {
+    "main.css": "/happymaths/static/css/main.44adca38.chunk.css",
+    "main.js": "/happymaths/static/js/main.3ab36a11.chunk.js",
+    "main.js.map": "/happymaths/static/js/main.3ab36a11.chunk.js.map",
+    "runtime~main.js": "/happymaths/static/js/runtime~main.ab89f926.js",
+    "runtime~main.js.map": "/happymaths/static/js/runtime~main.ab89f926.js.map",
+    "static/js/2.d7eb5d35.chunk.js": "/happymaths/static/js/2.d7eb5d35.chunk.js",
+    "static/js/2.d7eb5d35.chunk.js.map": "/happymaths/static/js/2.d7eb5d35.chunk.js.map",
+    "index.html": "/happymaths/index.html",
+    "precache-manifest.2e65ffeb633f867aa193a0f1bea7d9bf.js": "/happymaths/precache-manifest.2e65ffeb633f867aa193a0f1bea7d9bf.js",
+    "service-worker.js": "/happymaths/service-worker.js",
+    "static/css/main.44adca38.chunk.css.map": "/happymaths/static/css/main.44adca38.chunk.css.map"
+  }
 }
